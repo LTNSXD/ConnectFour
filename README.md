@@ -6,7 +6,7 @@
 
 UCT算法是将UCB1算法应用到蒙特卡洛树搜索的结果。简单来说，信心上限树搜索的过程可以由下图的伪代码解释：
 
-![image-20230603142929197](https://raw.githubusercontent.com/LTNSXD/MarkdownImages/main/uPic/2023/06/ngboai.png?token=AZUCMLSLLRNIMFMIOV2DTY3EPPJUW)
+![image-20230603142929197](https://raw.githubusercontent.com/LTNSXD/MarkdownImages/main/uPic/2023/06/ngboai-20230604080454556.png?token=AZUCMLT2AV3HD2JVD4TKQBLEPPKWI)
 
 可以看到信心上限树的搜索过程实际可以概括为以下四个步骤
 
@@ -19,7 +19,7 @@ UCT算法是将UCB1算法应用到蒙特卡洛树搜索的结果。简单来说�
 
 如此解释依然有些抽象，辅助下面的图和<ruby>重力四子棋<rt>ConnectFour</rt></ruby>的场景，我再进行具体的阐释：
 
-![img](https://raw.githubusercontent.com/LTNSXD/MarkdownImages/main/uPic/2023/06/3pr24d.jpg?token=AZUCMLXQTAPCRJX3ZOJZIYLEPPJWE)
+![img](https://raw.githubusercontent.com/LTNSXD/MarkdownImages/main/uPic/2023/06/3pr24d-20230604080537457.jpg?token=AZUCMLRHHFIP26AVKMMDQRLEPPKY4)
 
 - 选择：对于一个节点，其状态无非有以下三种：
   - 该节点所有可行动作都已经被拓展过。那么我们将使用UCB1算法选择他所有子节点中信心上限最高的那一个。
